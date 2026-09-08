@@ -1,0 +1,157 @@
+/*
+===============================================================================
+ CONTADOR DE ESPECTADORES GUIA PRETO ANIMADO MULTISTREAM — JAVASCRIPT
+===============================================================================
+
+ Copyright © 2026 Leonardo — Guia do Streamer.
+ Todos os direitos reservados.
+
+ Projeto: Contador de Espectadores Guia Preto Animado Multistream
+ Edição: Black Outline Animado horizontal
+ Versão: 1.0.0
+ Identificador: GDS-VC-PRETO-ANIM-260908-917364-JS
+
+ Direção criativa, conceito, personalização, testes e publicação:
+ Leonardo — Guia do Streamer
+
+ Desenvolvimento técnico realizado com auxílio de Inteligência Artificial.
+
+ LICENÇA DE USO GRATUITO COM RESTRIÇÕES
+
+ É PERMITIDO:
+ - Usar este código em suas próprias transmissões pessoais ou monetizadas.
+ - Personalizar e modificar o código exclusivamente para uso próprio.
+
+ NÃO É PERMITIDO:
+ - Redistribuir, republicar, revender, sublicenciar ou fazer reupload.
+ - Disponibilizar o código original ou modificado em outros repositórios,
+   sites, vídeos, grupos, packs, downloads ou plataformas.
+ - Remover ou alterar este aviso, os créditos ou a identificação do projeto.
+ - Apresentar este projeto, layout, animações ou código como criação própria.
+
+ Para compartilhar, envie somente o link da publicação ou do repositório
+ oficial do Guia do Streamer.
+
+ Os termos completos estão no README.md e no LICENSE.txt deste projeto.
+ A ausência deste aviso em uma cópia não representa autorização de uso.
+
+===============================================================================
+*/
+
+(function () {
+  let initialized = false;
+  let displayedTotal = 0;
+  let animationFrame = null;
+
+  function restartEffect(element, className, duration) {
+    if (!element) return;
+
+    element.classList.remove(className);
+    void element.offsetWidth;
+    element.classList.add(className);
+
+    setTimeout(function () {
+      element.classList.remove(className);
+    }, duration);
+  }
+
+  function readCount(value) {
+    const text = String(value || "").trim().toLowerCase();
+    const suffix = text.slice(-1);
+    const match = text.match(/[\d.,]+/);
+
+    if (!match) return 0;
+
+    if (suffix === "k" || suffix === "m") {
+      const decimal = parseFloat(match[0].replace(",", ".")) || 0;
+      return Math.round(decimal * (suffix === "k" ? 1000 : 1000000));
+    }
+
+    return parseInt(match[0].replace(/\D/g, ""), 10) || 0;
+  }
+
+  function animateTotal(nextTotal) {
+    const output = document.getElementById("total_count");
+    if (!output || nextTotal === displayedTotal) return;
+
+    const card = document.querySelector(".viewer-black");
+    const startTotal = displayedTotal;
+    const isIncrease = nextTotal > startTotal;
+    const difference = nextTotal - startTotal;
+    const startedAt = performance.now();
+    const duration = 450;
+
+    cancelAnimationFrame(animationFrame);
+
+    function frame(now) {
+      const progress = Math.min((now - startedAt) / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 3);
+      const current = Math.round(startTotal + difference * eased);
+
+      output.textContent = current.toLocaleString("pt-BR");
+
+      if (progress < 1) {
+        animationFrame = requestAnimationFrame(frame);
+      } else {
+        displayedTotal = nextTotal;
+      }
+    }
+
+    restartEffect(output, isIncrease ? "count-up" : "count-down", 700);
+    restartEffect(card, isIncrease ? "viewer-up" : "viewer-down", 850);
+
+    animationFrame = requestAnimationFrame(frame);
+  }
+
+  function updateTotal() {
+    const container = document.getElementById("platform_container");
+    if (!container) return;
+
+    const counters = container.querySelectorAll('[class$="-count"]');
+    let total = 0;
+
+    counters.forEach(function (counter) {
+      const nextValue = readCount(counter.textContent);
+      const previousValue = counter.dataset.viewerValue;
+      const platform = counter.closest(".platform-item");
+
+      if (previousValue !== undefined && Number(previousValue) !== nextValue) {
+        restartEffect(
+          platform,
+          nextValue > Number(previousValue) ? "platform-up" : "platform-down",
+          700
+        );
+      }
+
+      counter.dataset.viewerValue = String(nextValue);
+      total += nextValue;
+    });
+
+    animateTotal(total);
+  }
+
+  function initializeViewerCount() {
+    if (initialized) return;
+
+    const container = document.getElementById("platform_container");
+    if (!container) return;
+
+    initialized = true;
+
+    const observer = new MutationObserver(updateTotal);
+    observer.observe(container, {
+      childList: true,
+      subtree: true,
+      characterData: true
+    });
+
+    updateTotal();
+  }
+
+  document.addEventListener("onLoad", initializeViewerCount);
+  document.addEventListener("DOMContentLoaded", initializeViewerCount);
+
+  if (document.readyState !== "loading") {
+    initializeViewerCount();
+  }
+})();

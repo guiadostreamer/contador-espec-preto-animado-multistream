@@ -1,0 +1,72 @@
+<!--
+===============================================================================
+ CONTADOR DE ESPECTADORES GUIA PRETO ANIMADO MULTISTREAM — HTML
+===============================================================================
+
+ Copyright © 2026 Leonardo — Guia do Streamer.
+ Todos os direitos reservados.
+
+ Projeto: Contador de Espectadores Guia Preto Animado Multistream
+ Edição: Black Outline Animado horizontal
+ Versão: 1.0.0
+ Identificador: GDS-VC-PRETO-ANIM-260908-917364-HTML
+
+ Direção criativa, conceito, personalização, testes e publicação:
+ Leonardo — Guia do Streamer
+
+ Desenvolvimento técnico realizado com auxílio de Inteligência Artificial.
+
+ LICENÇA DE USO GRATUITO COM RESTRIÇÕES
+
+ É PERMITIDO:
+ - Usar este código em suas próprias transmissões pessoais ou monetizadas.
+ - Personalizar e modificar o código exclusivamente para uso próprio.
+
+ NÃO É PERMITIDO:
+ - Redistribuir, republicar, revender, sublicenciar ou fazer reupload.
+ - Disponibilizar o código original ou modificado em outros repositórios,
+   sites, vídeos, grupos, packs, downloads ou plataformas.
+ - Remover ou alterar este aviso, os créditos ou a identificação do projeto.
+ - Apresentar este projeto, layout, animações ou código como criação própria.
+
+ Para compartilhar, envie somente o link da publicação ou do repositório
+ oficial do Guia do Streamer.
+
+ Os termos completos estão no README.md e no LICENSE.txt deste projeto.
+ A ausência deste aviso em uma cópia não representa autorização de uso.
+
+===============================================================================
+-->
+
+<div id="viewer_widget" aria-label="Contador de espectadores">
+  <div class="viewer-black">
+    <div class="live-status">
+      <span class="live-dot"></span>
+      <span>AO VIVO</span>
+    </div>
+
+    <div class="total-viewers">
+      <svg class="eye-icon" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M2.2 12s3.6-6 9.8-6 9.8 6 9.8 6-3.6 6-9.8 6-9.8-6-9.8-6Z"></path>
+        <circle cx="12" cy="12" r="2.7"></circle>
+      </svg>
+      <span id="total_count" aria-live="polite">0</span>
+      <span class="total-label">espectadores</span>
+    </div>
+
+    <span class="divider" aria-hidden="true"></span>
+    <div id="platform_container"></div>
+  </div>
+</div>
+
+<script type="text/template" id="platform_item">
+  <span
+    class="platform-item platform-{platform}"
+    style="font: {font_weight} {font_size} {font};"
+    id="{platform}_container"
+  >
+    <i class="icon-{platform} platform-icon" style="color:{platform_color};"></i>
+    <img class="platform-img" width="{font_size}" height="{font_size}" alt="">
+    <span style="color:{font_color}" class="{platform}-count"></span>
+  </span>
+</script>

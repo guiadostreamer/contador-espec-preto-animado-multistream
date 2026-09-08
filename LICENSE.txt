@@ -1,0 +1,184 @@
+LICENÇA DE USO GRATUITO COM RESTRIÇÕES
+CONTADOR DE ESPECTADORES GUIA PRETO ANIMADO MULTISTREAM
+
+Versão da licença: 1.0
+Data: 08 de setembro de 2026
+Identificador do projeto: GDS-VC-PRETO-ANIM-260908-917364
+
+Copyright © 2026 Leonardo — Guia do Streamer.
+Todos os direitos reservados.
+
+Direção criativa, conceito, personalização, testes e publicação:
+Leonardo — Guia do Streamer.
+
+Desenvolvimento técnico realizado com auxílio de Inteligência Artificial.
+
+
+1. OBJETO E ESCOPO
+
+Esta licença aplica-se exclusivamente ao projeto denominado “Contador de
+Espectadores Guia Preto Animado Multistream”, edição Black Outline Animado
+horizontal, identificado pelo código GDS-VC-PRETO-ANIM-260908-917364. Seu
+escopo inclui o HTML, CSS, JavaScript, documentação, textos, identidade visual,
+combinação específica de movimentos e demais arquivos disponibilizados em seu
+repositório oficial.
+
+Esta licença não se aplica às edições azul, preta estática, Cyber Waves,
+vertical nem a quaisquer outros projetos ou versões. Cada edição possui ou
+poderá possuir arquivos, identificação e licença próprios.
+
+Este é um projeto de código-fonte disponível para uso gratuito sob condições.
+Ele NÃO é software de domínio público e NÃO é distribuído sob uma licença de
+código aberto que autorize livre redistribuição.
+
+
+2. PERMISSÃO DE USO
+
+É concedida ao usuário uma licença gratuita, não exclusiva, pessoal e
+intransferível para:
+
+a) usar o widget em suas próprias transmissões pessoais;
+
+b) usar o widget em suas próprias transmissões monetizadas ou comerciais;
+
+c) instalar o widget em sua própria conta do Streamlabs e utilizá-lo em uma
+   fonte de navegador no OBS Studio ou em software compatível;
+
+d) modificar cores, tamanhos, textos, posicionamento, movimentos e outros
+   detalhes para uso próprio;
+
+e) utilizar ferramentas de Inteligência Artificial para auxiliar em
+   personalizações destinadas exclusivamente ao próprio uso;
+
+f) exibir o widget funcionando em suas transmissões, gravações, vídeos,
+   capturas de tela e materiais de divulgação da própria transmissão.
+
+
+3. RESTRIÇÕES
+
+Sem autorização prévia e escrita de Leonardo — Guia do Streamer, é proibido:
+
+a) redistribuir, republicar, compartilhar ou disponibilizar os arquivos, no
+   todo ou em parte, em qualquer site, repositório, fórum, grupo, serviço de
+   armazenamento, rede social, vídeo ou plataforma;
+
+b) criar repositórios espelho, páginas alternativas de download, cópias de
+   segurança públicas, releases, pacotes, coleções, packs ou templates que
+   contenham este projeto;
+
+c) fazer reupload do código original ou de versões modificadas;
+
+d) vender, revender, alugar, sublicenciar ou explorar comercialmente os
+   arquivos, isoladamente ou como parte de outro produto ou serviço;
+
+e) incluir o projeto em produtos, serviços, cursos, downloads, pacotes ou
+   coleções, gratuitos ou pagos;
+
+f) distribuir ou publicar versões derivadas, adaptações, conversões,
+   traduções, reformulações ou códigos baseados de maneira substancial neste
+   projeto;
+
+g) utilizar o código como entrada, referência direta ou base em ferramentas de
+   Inteligência Artificial com a finalidade de gerar uma versão para venda,
+   redistribuição, reupload ou apresentação sob outra autoria;
+
+h) publicar o código completo ou partes substanciais dele em tutoriais, vídeos,
+   artigos, apostilas ou materiais de treinamento;
+
+i) remover, ocultar, substituir ou adulterar os avisos de autoria, os termos de
+   licença, os créditos ou os identificadores presentes nos arquivos;
+
+j) afirmar ou sugerir que o projeto, seu layout, suas animações ou seu código
+   foram criados originalmente por outra pessoa;
+
+k) utilizar o nome Guia do Streamer de maneira que sugira parceria, patrocínio,
+   aprovação ou endosso inexistente.
+
+
+4. MODIFICAÇÕES PARA USO PRÓPRIO
+
+As modificações autorizadas por esta licença destinam-se somente ao uso do
+próprio usuário em suas transmissões. A permissão para modificar não inclui
+permissão para publicar, distribuir, vender, doar ou fornecer a terceiros a
+versão modificada.
+
+Uma versão modificada continua sujeita a esta licença quando incorporar o
+código ou elementos protegidos deste projeto.
+
+
+5. COMPARTILHAMENTO CORRETO
+
+Para indicar este widget a outra pessoa, compartilhe somente o link da
+publicação ou do repositório oficial mantido pelo Guia do Streamer.
+
+O recebimento de uma cópia por meio não oficial não concede ao destinatário
+qualquer permissão adicional. A ausência, remoção ou alteração deste arquivo em
+uma cópia não transforma o projeto em domínio público e não representa
+autorização de uso ou redistribuição.
+
+
+6. AUTORIA E REGISTRO TÉCNICO
+
+O identificador GDS-VC-PRETO-ANIM-260908-917364 relaciona esta licença
+exclusivamente à edição Black Outline Animado horizontal. Os avisos presentes
+no HTML, CSS e JavaScript, juntamente com o histórico de commits, tags,
+releases, arquivos originais e datas de publicação, podem ser utilizados para
+identificar a origem e a evolução do material.
+
+O uso permitido por esta licença não transfere autoria, titularidade ou outros
+direitos sobre o projeto ao usuário.
+
+
+7. DIREITOS DE TERCEIROS
+
+Streamlabs, Twitch, YouTube, Facebook, Kick e OBS, bem como seus nomes, marcas,
+ícones e serviços, pertencem aos respectivos titulares.
+
+Esta licença não concede direitos sobre marcas ou materiais de terceiros. O
+projeto é independente e não implica parceria, patrocínio ou endosso oficial
+dessas empresas.
+
+
+8. AUSÊNCIA DE GARANTIAS
+
+O projeto é fornecido no estado em que se encontra, sem garantias expressas ou
+implícitas de funcionamento contínuo, compatibilidade futura ou adequação a uma
+finalidade específica.
+
+Alterações realizadas pelo Streamlabs, pelas plataformas de transmissão, pelo
+OBS Studio ou por navegadores integrados podem afetar o funcionamento do
+widget. O responsável pelo projeto não será obrigado a fornecer manutenção,
+suporte ou atualizações.
+
+
+9. VIOLAÇÃO E ENCERRAMENTO DA LICENÇA
+
+Qualquer descumprimento destes termos encerra automaticamente a permissão de
+uso concedida ao infrator, sem prejuízo das medidas cabíveis para proteção dos
+direitos relacionados ao projeto.
+
+Após o encerramento, o infrator deverá interromper o uso não autorizado e
+remover as cópias que tenha publicado, distribuído ou disponibilizado.
+
+
+10. AUTORIZAÇÕES EXCEPCIONAIS
+
+Qualquer uso não previsto expressamente nesta licença depende de autorização
+prévia e escrita de Leonardo — Guia do Streamer. O silêncio, a ausência de
+resposta ou o conhecimento de uma utilização não representam autorização.
+
+
+11. ACEITAÇÃO
+
+Ao copiar, instalar, modificar ou utilizar este projeto, o usuário declara ter
+lido e aceitado as condições desta licença.
+
+Se não concordar com estes termos, não deverá copiar, instalar, modificar ou
+utilizar o projeto.
+
+
+Projeto: Contador de Espectadores Guia Preto Animado Multistream
+Edição: Black Outline Animado horizontal
+Identificador: GDS-VC-PRETO-ANIM-260908-917364
+Responsável: Leonardo — Guia do Streamer
+Copyright © 2026. Todos os direitos reservados.
